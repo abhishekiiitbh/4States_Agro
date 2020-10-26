@@ -391,6 +391,25 @@ input[type='checkbox'] {
 	color: #14bf98;
 }
 
+.form-control-reset-button {
+	display: inline-block;
+	width: 100%;
+	height: 3.125rem;
+	border: 0.125rem solid #14bf98;
+	border-radius: 0.25rem;
+	background-color:#FF6F61;
+	color: #fff;
+	font: 700 0.75rem/1.75rem "Montserrat", sans-serif;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+
+.form-control-reset-button:hover {
+	background-color: transparent;
+	color: #14bf98;
+}
+
 /* Form Success And Error Message Formatting */
 #lmsgSubmit.h3.text-center.tada.animated,
 #cmsgSubmit.h3.text-center.tada.animated,
@@ -1241,7 +1260,7 @@ input[type='checkbox'] {
 
 
 /**********************/
-/*     11. Call Me    */
+/*     11. Login    */
 /**********************/
 .form-1 {
 	padding-top: 6.625rem;	
@@ -1306,6 +1325,8 @@ input[type='checkbox'] {
 .form-1 .help-block.with-errors .list-unstyled {
 	color: #dfe5ec;
 }
+
+
 
 
 /************************/
