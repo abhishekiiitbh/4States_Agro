@@ -1,0 +1,73 @@
+.mes{
+   
+position: relative;
+display: inline-block;
+outline: none;
+top: 1000%;
+border: 2px solid black; 
+height: 70px;
+width: 1000px;
+}
+.mes:hover{
+    background: rgb(171, 172, 219);
+}
+
+.farm{
+ 
+position: relative;
+display: inline-block;
+outline: none;
+padding:66px;
+border: 2px solid black; 
+height: 70px;
+width: 1000px;
+    
+}
+.farm:hover{
+    background: rgb(171, 172, 219);
+}
+.log{
+    outline: none;
+    display: inline-block;
+     position:absolute;
+     top:70px;
+     right:75px;
+     cursor: pointer;
+}
+.log:hover{
+    background: rgb(171, 172, 219);
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  
+  .show {
+    display: block;
+  }
