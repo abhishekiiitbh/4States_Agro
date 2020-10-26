@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <!-- Website Title -->
+    <title>INSURANCE Claim</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+
+
+    <!-- PERSONAL CSS -->
+     <link href="insurance.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+    <div>
+        
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#intro">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#callMe">LOGIN IN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT US</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link" target="_blank">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link" target="_blank">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> 
+    </div>
+    <!-- end of navbar -->
+    <!-- end of navbar -->
+    <!-- BODY START-->
+    <div class="form-1"  >
+    <div class="container">
+        <div class="containeruser">
+            <h1>INSURANCE CLAIMS</h1>
+            <h3 style="text-align: center;">To Claim Enter Particulars:</h3>
+            <form>
+                <label for="fname"> 
+                    Enter Name:
+                </label><br>
+                <input type="text" name="fname"><br><br>
+                <label for="femail">
+                    Enter Email:
+                </label><br>
+                <input type="text" name="femail"><br><br>
+                <label for="fphone">
+                    Enter Mobile Number:
+                </label><br>
+                <input type="tel" maxlength="10" name="fphone"><br><br>
+                <label for="fadd">
+                    Enter Policy Number:
+                </label><br>
+                <input type="textarea" name="fadd"><br><br>
+                <label for="fcrop">
+                    Reason For Claim:
+                </label><br>
+                <input type="text" name="fcrop"><br><br>
+                <label for="fcropType">
+                 Select Date of Calamity:
+                </label><br>
+                <input type="date" name="fcdate" id=""><br><br>
+                <label for="fcropType">
+                    Select State:
+                   </label><br>
+                <select class="customSelect">
+                    <option>
+                      SELECT
+                    </option>
+                    <option>
+                        Karnataka
+                    </option>
+                    <option>
+                        Odisha
+                    </option>
+                    <option>
+                        Maharashtra
+                    </option>
+                    <option>
+                        Tamil Nadu
+                    </option>
+                </select> <br> <br>
+                <label for="fcropType">
+                    Select Insurance Company:
+                   </label><br>
+                <select class="customSelect">
+                    <option>
+                      SELECT
+                    </option>
+                    <option>
+                       ABC
+                    </option>
+                    <option>
+                        BAC
+                    </option>
+                    <option>
+                        CAB
+                    </option>
+                </select> <br> <br>
+                <div style=" width: 100%; text-align: center;">
+                    <button>
+                        APPLY
+                    </button> 
+                </div>
+            </form>
+            <br><br>
+            <div >
+                <h4 style="margin-left: 3%;">Previous Claims:</h4>
+                <table>
+                    <thead>
+                        <th>
+                            POLICY NO
+                        </th>
+                        <th>
+                            NAME
+                        </th>
+                        <th>
+                            CROP
+                        </th>
+                        <th>
+                           DATE
+                        </th>
+                        <th>
+                            REASON
+                         </th> 
+                        <th>
+                             INSURANCE COMPANY
+                        </th>
+                        <th>
+                            AMOUNT CLAIMED
+                        </th>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Sample1
+                            </td>
+                            <td>
+                                Sample1
+                            </td>
+                            <td>
+                                Sample1
+                            </td>
+                            <td>
+                                Sample1
+                            </td>
+                            <td>
+                                Sample1
+                            </td>
+                            <td>
+                                Sample1
+                            </td>
+                            <td>
+                                Sample1
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br>
+        </div>
+    </div>
+    </div>
+
+    <!--BODY END-->
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container about">
+                        <h4>Few Words About Aria</h4>
+                        <p class="white">We're passionate about delivering the best business growth services for farmers
+                            just starting out as startups or industry players that have established their market
+                            position a long tima ago.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+
+</html>
