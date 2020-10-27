@@ -38,51 +38,55 @@
             color: #FF6F61;
         }
 
-        .container .content.contentEnglish{
+        .container .content.contentEnglish {
             display: block;
         }
-        .container .content.contentHindi{
+
+        .container .content.contentHindi {
             display: none;
         }
-        .check{
+
+        .check {
             position: relative;
             width: 50px;
         }
-        .check:before
-        {
-          content:'';
-          position: absolute;
-          width: 50px;
-          height: 25px;
-          background: #333;
-          border-radius: 25px;
+
+        .check:before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 25px;
+            background: #333;
+            border-radius: 25px;
         }
-        .check:checked:before{
+
+        .check:checked:before {
             background: #113448;
         }
-        .check:after
-        {
-          content:'';
-          position: absolute;
-          left: 0px;
-          width: 25px;
-          height: 25px;
-          background: #fff;
-          border-radius: 25px;
-          transition: 0.25s;
-          border: 2px solid #333;
-          box-sizing: border-box;
+
+        .check:after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            width: 25px;
+            height: 25px;
+            background: #fff;
+            border-radius: 25px;
+            transition: 0.25s;
+            border: 2px solid #333;
+            box-sizing: border-box;
         }
-        .check:checked:after{
+
+        .check:checked:after {
             left: 25px;
-            border: 2px solid  #113448;
+            border: 2px solid #113448;
         }
-        .check:checked ~ .content.contentEnglish
-        {
+
+        .check:checked~.content.contentEnglish {
             display: none;
         }
-        .check:checked ~ .content.contentHindi
-        {
+
+        .check:checked~.content.contentHindi {
             display: block;
         }
     </style>
@@ -199,46 +203,48 @@
                     <span class="en">English</span>
                     <input type="checkbox" class="check">
                     <span class="hn">हिंदी</span>
-                        <div class="text-container content contentEnglish">
+                    <div class="text-container content contentEnglish">
 
-                            <div class="section-title">ABOUT US</div>
-                            <h2>We Offer Some Of The Best Agriculture Growth Services In INDIA</h2>
-                            <p><b>Agro</b> is a project in Agriculture domain. We at Agro are <b>whole heartedly
-                                    devoted</b>
-                                to help farmers of India.</p>
-                            <p>We are here to let farmers know that all your <b>hardwork worth more</b> than what you
-                                get.
-                            </p>
-                            <p> Farmers will get new ideas to <b>improve their productivity</b>, they can buy and sell
-                                their
-                                products online from different cities through the <b>process of bidding</b>. </p>
-                            <p> Farmers can use this facility and <b>avail benefits</b> of different schemes available
-                                which
-                                will <b>increase their profit</b>.</p>
-                            <p class="testimonial-text">"Our mission here at Agro is to get you through those tough
-                                moments
-                                relying on our team's expertise in helping and growing farmers."</p>
-                            <div class="testimonial-author">Sanjay Jalona - CEO</div>
-                        </div> <!-- end of text-container -->
-                        <div class="text-container content contentHindi">
+                        <div class="section-title">ABOUT US</div>
+                        <h2>We Offer Some Of The Best Agriculture Growth Services In INDIA</h2>
+                        <p><b>Agro</b> is a project in Agriculture domain. We at Agro are <b>whole heartedly
+                                devoted</b>
+                            to help farmers of India.</p>
+                        <p>We are here to let farmers know that all your <b>hardwork worth more</b> than what you
+                            get.
+                        </p>
+                        <p> Farmers will get new ideas to <b>improve their productivity</b>, they can buy and sell
+                            their
+                            products online from different cities through the <b>process of bidding</b>. </p>
+                        <p> Farmers can use this facility and <b>avail benefits</b> of different schemes available
+                            which
+                            will <b>increase their profit</b>.</p>
+                        <p class="testimonial-text">"Our mission here at Agro is to get you through those tough
+                            moments
+                            relying on our team's expertise in helping and growing farmers."</p>
+                        <div class="testimonial-author">Sanjay Jalona - CEO</div>
+                    </div> <!-- end of text-container -->
+                    <div class="text-container content contentHindi">
 
-                            <div class="section-title">
-                                हमारे बारे में</div>
-                            <h2>हम भारत में कुछ सर्वश्रेष्ठ कृषि विकास सेवाओं की पेशकश करते हैं</h2>
-                            <p><b>एग्रो</b> कृषि क्षेत्र में एक परियोजना है। हम एग्रो में <b>पूरे दिल</b> से भारत के
-                                किसानों की मदद के लिए <b>समर्पित</b> हैं।</p>
-                            <p>हम यहां किसानों को यह बताने के लिए हैं कि आपके सभी <b>हार्डवर्क</b> आपको जितना मिलता है,
-                                <b>उससे अधिक</b> है।
-                            </p>
-                            <p> किसानों को अपनी <b>उत्पादकता में सुधार</b> करने के लिए नए विचार मिलेंगे, वे <b>बोली लगाने की
-                                प्रक्रिया</b> के माध्यम से विभिन्न शहरों से अपने उत्पादों को ऑनलाइन खरीद और बेच सकते हैं।
-                            </p>
-                            <p> किसान इस सुविधा का उपयोग कर सकते हैं और उपलब्ध विभिन्न योजनाओं का <b>लाभ उठा सकते हैं </b>जिससे
-                                उनका <b>लाभ बढ़ेगा</b>।</p>
-                            <p class="testimonial-text">"हमारा मिशन एग्रो में आपको उन कठिन क्षणों के माध्यम से प्राप्त
-                                करना है जो किसानों की मदद करने और बढ़ने में हमारी टीम की विशेषज्ञता पर निर्भर हैं।"</p>
-                            <div class="testimonial-author">संजय जालोना - सी.ई.ओ.</div>
-                        </div> <!-- end of text-container -->
+                        <div class="section-title">
+                            हमारे बारे में</div>
+                        <h2>हम भारत में कुछ सर्वश्रेष्ठ कृषि विकास सेवाओं की पेशकश करते हैं</h2>
+                        <p><b>एग्रो</b> कृषि क्षेत्र में एक परियोजना है। हम एग्रो में <b>पूरे दिल</b> से भारत के
+                            किसानों की मदद के लिए <b>समर्पित</b> हैं।</p>
+                        <p>हम यहां किसानों को यह बताने के लिए हैं कि आपके सभी <b>हार्डवर्क</b> आपको जितना मिलता है,
+                            <b>उससे अधिक</b> है।
+                        </p>
+                        <p> किसानों को अपनी <b>उत्पादकता में सुधार</b> करने के लिए नए विचार मिलेंगे, वे <b>बोली लगाने की
+                                प्रक्रिया</b> के माध्यम से विभिन्न शहरों से अपने उत्पादों को ऑनलाइन खरीद और बेच सकते
+                            हैं।
+                        </p>
+                        <p> किसान इस सुविधा का उपयोग कर सकते हैं और उपलब्ध विभिन्न योजनाओं का <b>लाभ उठा सकते हैं
+                            </b>जिससे
+                            उनका <b>लाभ बढ़ेगा</b>।</p>
+                        <p class="testimonial-text">"हमारा मिशन एग्रो में आपको उन कठिन क्षणों के माध्यम से प्राप्त
+                            करना है जो किसानों की मदद करने और बढ़ने में हमारी टीम की विशेषज्ञता पर निर्भर हैं।"</p>
+                        <div class="testimonial-author">संजय जालोना - सी.ई.ओ.</div>
+                    </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
                     <div class="image-container">
@@ -464,6 +470,16 @@
                             <input type="password" class="form-control-input" id="lpsd" name="lpsd" required>
                             <label class="label-control" for="lpsd">Password</label>
                             <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <select name="usertype" id="usertype" class="form-control-input">
+                                <option value="" selected>Select User Type </option>
+                                <option value="A">Admin</option>
+                                <option value="B">Bidder</option>
+                                <option value="F">Farmer</option>
+
+                            </select>
+
                         </div>
                         <div class="form-group">
                             <button type="submit" class="form-control-submit-button">LOGIN</button>
