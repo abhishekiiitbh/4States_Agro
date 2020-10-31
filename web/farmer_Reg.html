@@ -35,6 +35,68 @@
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+
+    <style>
+        #parallax {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #parallax ::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+        }
+
+        #parallax ::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            mix-blend-mode: color;
+        }
+
+        #parallax img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: all;
+        }
+
+
+        #text {
+            position: relative;
+            color: #fff;
+            font-size: 4em;
+            font-family: sans-serif;
+            margin-left: 5%;
+
+        }
+
+        #para {
+            position: relative;
+            color: white;
+            font-size: 2em;
+            font-family: sans-serif;
+            margin-left: 5%;
+        }
+
+        #road {
+            z-index: 2;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -61,7 +123,38 @@
 
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
+    <div id="parallax">
+        <img src="images/bg.jpg" id="bg">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountain.png" id="mountain">
+        <img src="images/road.png" id="road">
 
+        <h2 id="para"> <i>“A farmer is a magician who produces money from the mud.”</i>
+        </h2>
+    </div>
+
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        /*let text = document.getElementById("text");*/
+        let para = document.getElementById("para");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.8 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            /* text.style.top = value * 1 + 'px';*/
+            para.style.top = value * 1 + 'px';
+
+        })
+
+    </script>
 
 
     <div id="callMe" class="form-1">
@@ -70,8 +163,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2 style="text-align: right;"> <i>“A farmer is a magician who produces money from the mud.”</i>
-                        </h2>
+
                         <h2 class="white">What you can do with AgroServices</h2>
                         <ul class="list-unstyled li-space-lg white">
                             <li class="media">
@@ -86,12 +178,13 @@
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <h4 class="white"> &nbsp After Logging in, You are allowed to sell  your desired Crops
+                                <h4 class="white"> &nbsp After Logging in, You are allowed to sell your desired Crops
                                 </h4>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <h4 class="white"> &nbsp After Logging in, You will be able to see all the bidders who are bidding on your crop.
+                                <h4 class="white"> &nbsp After Logging in, You will be able to see all the bidders who
+                                    are bidding on your crop.
                                 </h4>
                             </li>
                             <li class="media">

@@ -81,6 +81,67 @@
             text-align: center;
             background-color: #f1f1f1;
         }
+        
+        #parallax {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #parallax ::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+        }
+
+        #parallax ::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            mix-blend-mode: color;
+        }
+
+        #parallax img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: all;
+        }
+
+
+        #text {
+            position: relative;
+            color: #fff;
+            font-size: 4em;
+            font-family: sans-serif;
+            margin-left: 5%;
+
+        }
+
+        #para {
+            position: relative;
+            color: white;
+            font-size: 2em;
+            font-family: sans-serif;
+            margin-left: 5%;
+        }
+
+        #road {
+            z-index: 2;
+        }
+    
     </style>
 </head>
 
@@ -110,6 +171,39 @@
 
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
+
+    <div id="parallax">
+        <img src="images/bg.jpg" id="bg">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountain.png" id="mountain">
+        <img src="images/road.png" id="road">
+
+        <h2 id="para"> <i>“The perfect auction for the perfect winner.”</i>
+        </h2>
+    </div>
+
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        /*let text = document.getElementById("text");*/
+        let para = document.getElementById("para");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.8 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            /* text.style.top = value * 1 + 'px';*/
+            para.style.top = value * 1 + 'px';
+
+        })
+
+    </script>
 
     <!-- Call Me -->
     <div id="callMe" class="form-1">
