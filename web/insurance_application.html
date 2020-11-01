@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    
+
     <!-- Website Title -->
     <title>INSURANCE LOGIN</title>
 
@@ -19,13 +19,24 @@
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <!--animate css library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+    .containeruser
+    {
+        box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+                    5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+        
+    </style>
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 
 
     <!-- PERSONAL CSS -->
-     <link href="insurance.css" rel="stylesheet" type="text/css">
+    <link href="insurance.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -42,241 +53,242 @@
     <!-- end of preloader -->
 
     <div>
-        
-    
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
-        <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
 
-        <!-- Mobile Menu Toggle Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
-        </button>
-        <!-- end of mobile menu toggle button -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#intro">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#callMe">LOGIN IN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT US</a>
-                </li>
-            </ul>
-            <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="#your-link" target="_blank">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </a>
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#intro">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#callMe">LOGIN IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">CONTACT US</a>
+                    </li>
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="#your-link" target="_blank">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link" target="_blank">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                        </a>
+                    </span>
                 </span>
-                <span class="fa-stack">
-                    <a href="#your-link" target="_blank">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                    </a>
-                </span>
-            </span>
-        </div>
-    </nav> 
+            </div>
+        </nav>
     </div>
     <!-- end of navbar -->
     <!-- end of navbar -->
     <!-- BODY START-->
-    <div class="form-1"  >
-    <div class="container">
-        <div class="containeruser">
-            <h1  >INSURANCE APPLICATION</h1>
-            <h4 style="text-align: center;">Fill Details to Apply:</h4>
-            <form>
-                <label for="fname"> 
-                    Enter Name:
-                </label><br>
-                <input type="text" name="fname"><br><br>
-                <label for="femail">
-                    Enter Email:
-                </label><br>
-                <input type="text" name="femail"><br><br>
-                <label for="fphone">
-                    Enter Mobile Number:
-                </label><br>
-                <input type="tel" maxlength="10" name="fphone"><br><br>
-                <label for="fstate">
-                    Select State:
-                </label><br>
-                <select class="customSelect">
-                    <option>
-                      SELECT
-                    </option>
-                    <option>
-                        Karnataka
-                    </option>
-                    <option>
-                        Odisha
-                    </option>
-                    <option>
-                        Maharashtra
-                    </option>
-                    <option>
-                        Tamil Nadu
-                    </option>
-                </select> <br> <br>
-                <label for="fadd">
-                    Enter Address:
-                </label><br>
-                <input type="textarea" name="fadd"><br><br>
-                
-                <label for="fcrop">
-                    Enter CropName:
-                </label><br>
-                <input type="text" name="fcrop"><br><br>
-                <label for="fcropType">
-                 Select CropType:
-                </label><br>
-                <select class="customSelect">
-                    <option>
-                      SELECT
-                    </option>
-                    <option>
-                        Khariff
-                    </option>
-                    <option>
-                        Rabi 
-                    </option>
-                    <option>
-                        Annual / Horticulture
-                    </option>
-                </select> <br><br>
-               
-                <label for="fyear">
-                    Select Year:
-                </label><br>
-                <select class="customSelect">
-                    <option>
-                      SELECT
-                    </option>
-                    <option>
-                        2021
-                    </option>
-                    <option>
-                        2020 
-                    </option>
-                    <option>
-                        2019
-                    </option>
-                </select> <br> <br>
-                <label for="farea">
-                    Enter Area:
-                </label><br>
-                <input type="text" name="farea"><br><br>
-                <div style=" width: 100%; text-align: center;">
-                    <div style="display: inline;">  
-                    <button>
-                        CALCULATE
-                    </button> </div>
-                    <div style="display: inline;">
-                    <button>
-                        APPLY
-                    </button> 
-                </div>
-                </div>
-            </form>
-            <br><br>
-            <div >
-            <h4 style="margin-left: 3%;">Applied Insurance:</h4>
-                <table>
-                    <thead>
-                        <th>
-                            POLICY NO
-                        </th>
-                        <th>
-                            NAME
-                        </th>
-                        <th>
-                            PHONE NUMBERs
-                        </th>
-                        <th>
-                            EMAIL
-                        </th>
-                        <th>
-                            CROP
-                        </th>
-                        <th>
-                            STATE
-                        </th>
-                        <th>
-                            YEAR
-                        </th>
-                        <th>
-                             INSURANCE COMPANY
-                        </th>
-                        <th>
-                            YOUR PREMIUM
-                        </th>
-                        <th>
-                            GOVT PREMIUM
-                        </th>
-                        <th>
-                            SUM ASSURED
-                        </th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Sample1
-                            </td>
-                            <td>
-                                Sample1
-                            </td>
-                            <td>
-                                Sample1
-                            </td>
-                            <td>
-                                Sample1
-                            </td>
-                            <td>
-                                Sample1
-                            </td>
-                            <td>
-                                Sample1
-                            </td>
-                            <td>
-                                Sample1
-                            </td>
-                            <td>
-                                Sample1
-                            </td>
-                            <td>
-                                Sample1
-                            </td>
-                            <td>
-                                Sample1
-                            </td>
-                            <td>
-                                Sample1
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div><br>
+    <div class="form-1">
+        <div class="container">
+            <div class="containeruser">
+                <h1 class="animate__animated animate__fadeInLeft">INSURANCE APPLICATION</h1>
+                <!--<h1 class="animate__animated animate__bounce">An animated element</h1>-->
+                <h4 style="text-align: center;">Fill Details to Apply:</h4>
+                <form>
+                    <label for="fname">
+                        Enter Name:
+                    </label><br>
+                    <input type="text" name="fname"><br><br>
+                    <label for="femail">
+                        Enter Email:
+                    </label><br>
+                    <input type="text" name="femail"><br><br>
+                    <label for="fphone">
+                        Enter Mobile Number:
+                    </label><br>
+                    <input type="tel" maxlength="10" name="fphone"><br><br>
+                    <label for="fstate">
+                        Select State:
+                    </label><br>
+                    <select class="customSelect">
+                        <option>
+                            SELECT
+                        </option>
+                        <option>
+                            Karnataka
+                        </option>
+                        <option>
+                            Odisha
+                        </option>
+                        <option>
+                            Maharashtra
+                        </option>
+                        <option>
+                            Tamil Nadu
+                        </option>
+                    </select> <br> <br>
+                    <label for="fadd">
+                        Enter Address:
+                    </label><br>
+                    <input type="textarea" name="fadd"><br><br>
+
+                    <label for="fcrop">
+                        Enter CropName:
+                    </label><br>
+                    <input type="text" name="fcrop"><br><br>
+                    <label for="fcropType">
+                        Select CropType:
+                    </label><br>
+                    <select class="customSelect">
+                        <option>
+                            SELECT
+                        </option>
+                        <option>
+                            Khariff
+                        </option>
+                        <option>
+                            Rabi
+                        </option>
+                        <option>
+                            Annual / Horticulture
+                        </option>
+                    </select> <br><br>
+
+                    <label for="fyear">
+                        Select Year:
+                    </label><br>
+                    <select class="customSelect">
+                        <option>
+                            SELECT
+                        </option>
+                        <option>
+                            2021
+                        </option>
+                        <option>
+                            2020
+                        </option>
+                        <option>
+                            2019
+                        </option>
+                    </select> <br> <br>
+                    <label for="farea">
+                        Enter Area:
+                    </label><br>
+                    <input type="text" name="farea"><br><br>
+                    <div style=" width: 100%; text-align: center;">
+                        <div style="display: inline;">
+                            <button>
+                                CALCULATE
+                            </button> </div>
+                        <div style="display: inline;">
+                            <button>
+                                APPLY
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <br><br>
+                <div>
+                    <h4 style="margin-left: 3%;">Applied Insurance:</h4>
+                    <table>
+                        <thead>
+                            <th>
+                                POLICY NO
+                            </th>
+                            <th>
+                                NAME
+                            </th>
+                            <th>
+                                PHONE NUMBERs
+                            </th>
+                            <th>
+                                EMAIL
+                            </th>
+                            <th>
+                                CROP
+                            </th>
+                            <th>
+                                STATE
+                            </th>
+                            <th>
+                                YEAR
+                            </th>
+                            <th>
+                                INSURANCE COMPANY
+                            </th>
+                            <th>
+                                YOUR PREMIUM
+                            </th>
+                            <th>
+                                GOVT PREMIUM
+                            </th>
+                            <th>
+                                SUM ASSURED
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Sample1
+                                </td>
+                                <td>
+                                    Sample1
+                                </td>
+                                <td>
+                                    Sample1
+                                </td>
+                                <td>
+                                    Sample1
+                                </td>
+                                <td>
+                                    Sample1
+                                </td>
+                                <td>
+                                    Sample1
+                                </td>
+                                <td>
+                                    Sample1
+                                </td>
+                                <td>
+                                    Sample1
+                                </td>
+                                <td>
+                                    Sample1
+                                </td>
+                                <td>
+                                    Sample1
+                                </td>
+                                <td>
+                                    Sample1
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><br>
+            </div>
         </div>
-    </div>
     </div>
 
     <!--BODY END-->
-    
+
     <!-- Footer -->
     <div class="footer">
         <div class="container">
